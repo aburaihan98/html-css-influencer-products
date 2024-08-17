@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* share  */
+.primary-color {
+  color: rgb(58, 58, 58);
+}
+
+/* navbar style */
+.navbar {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.navbar ul {
+  display: flex;
+  gap: 34px;
+  font-weight: 600;
+}
+
+/* navbar responsive */
+@media screen and (max-width: 576px) {
+  .navbar {
+    margin: 35px auto 22px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar .brand {
+    margin: 0 auto;
+  }
+}
+/* header style */
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 133px;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  margin-bottom: 16px;
+}
+header p {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+header button {
+  width: 196px;
+  height: 44px;
+  background-color: rgb(224, 44, 109);
+  border-radius: 41px;
+  border: none;
+}
+header .image {
+  width: 475px;
+  height: 475px;
+  background-image: url("images/circle-design.svg");
+  display: flex;
+  align-items: center;
+}
+header .image img {
+  width: 440px;
+  height: 414px;
+}
+/* header responsive  */
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
+/* logos-section style */
+.logos-section {
+  width: 85%;
+  margin: 70px auto 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* logos-section responsive */
+@media screen and (max-width: 576px) {
+  .logos-section {
+    margin: 50px auto;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+
+/* popular-collection style */
+.popular-collection {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.popular-collection h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.popular-collection .items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.popular-collection .item {
+  max-width: 329px;
+  padding: 17px 15px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+.popular-collection .item h3 {
+  margin: 16px 0 6px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.popular-collection .item h6 {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.87);
+}
+.popular-collection .item p {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: rgb(120, 120, 133);
+  margin: 10px 0 17px;
+}
+.popular-collection .see-more {
+  margin-top: 50px;
+  font-weight: 700;
+  color: rgba(224, 44, 109, 0.87);
+  position: absolute;
+  right: 0;
+}
+
+/* popular-collection responsive */
+@media screen and (max-width: 576px) {
+  .popular-collection .items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    justify-items: center;
+  }
+}
+
+/* featured-products style */
+.featured-products {
+  width: 80%;
+  margin: 150px auto 100px;
+  display: flex;
+  align-items: center;
+  gap: 96px;
+}
+.featured-products img {
+  width: 100%;
+}
+.featured-products h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.featured-products p {
+  font-weight: 700;
+  margin: 16px 0;
+}
+.featured-products button {
+  width: 155px;
+  height: 44px;
+  background-color: rgb(224, 44, 109);
+  border: none;
+}
+
+/* featured-products responsive */
+@media screen and (max-width: 576px) {
+  .featured-products {
+    margin: 100px auto 50px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
+/* footer style */
+footer {
+  color: rgb(255, 255, 255);
+  background-color: rgb(10, 8, 38);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer h1 {
+  margin: 50px 0 30px;
+  font-weight: 700;
+}
+footer .copyright {
+  margin-bottom: 5px;
+  text-align: center;
+}
+footer .all-rights {
+  margin-bottom: 50px;
+}
